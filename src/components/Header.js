@@ -19,9 +19,7 @@ const Header = () => {
             <Button variant="outlined">
               
               <AddIcon className="text-[#00fffc]" />
-              <span className="text-[#00fffc] capitalize ">
-                Add Movie
-              </span>
+              <span className="text-[#00fffc] capitalize ">Add</span>
             </Button>
           </h1>
         </Link>
