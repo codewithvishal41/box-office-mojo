@@ -42,7 +42,7 @@ const Cards = () => {
        <Link to={`/detail/${e.id}`}><div key={i} className='cards text-sm md:text-base shadow-xl w-40 sm:w-44 md:w-60 h:56 sm:h-80 md:h-96 font-semibold  p-2 hover:-translate-y-4 cursor-pointer mt-6 transition-all duration-500 rounded-lg '>
         <img className='w-full h-48 md:h-72 ' src={e.image} alt="image of movies"/>
          <h1>{e.title}</h1>
-         <h1 className='flex items-center'> <span className="text-gray-400 mr-1 pt-1">Rating:</span> 
+         <h1 className='flex items-center text-sm'> <span className="text-gray-400 mr-1 pt-1">Rating:</span> 
          <ReactStars
             size={18}
             half={true}
@@ -50,7 +50,7 @@ const Cards = () => {
             edit={false}
          />
          </h1>
-         <h1> <span className="text-gray-400"> Year: </span>{e.year}</h1>
+         <h1> <span className="text-gray-400 text-sm"> Year: </span>{e.year}</h1>
       </div>
       </Link>
       )})
